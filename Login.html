@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="icon" href="cabeça.png">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="box" >
+        <span class="bordeline"></span>
+        <form>
+            <h2>LOGIN</h2>
+            <img class="cabeça" src="cabeça.png" alt="mario">
+            <div class="inputbox">
+                <input type="text" required="required" id="login">
+                <SPan>Nome de Usuario</SPan>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required" id="senha">
+                <SPan>Senha</SPan>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Esqueceu a senha?</a>
+                <a href="#">Criar conta</a>
+            </div>
+            <img class="Minhalogo" src="minhalogo.png" alt="professor">
+            <input type="submit" value="Entrar" onclick="logar(); return false">
+        </form>
+
+        <script>
+            alert("pode colocar admin na senha e usuário")
+
+            function logar(){
+                var login = document.getElementById('login').value;
+                var senha = document.getElementById('senha').value;
+                
+                if(login == "Admin" && senha == "Admin"){
+                    alert('Sucesso');
+                    location.href = "mario.html";
+                }else{
+                    alert('Usuario ou senha incorretos')
+                }
+
+            }
+
+        </script>
+
+    </div>
+    
+    <Div>
+        <img class="mariomoeda" src="luigimoeda.png" alt="moedamario">
+        <img class="luigimoeda" src="mariomoeda.png" alt="luigimoeda">
+    </Div>
+</body>
+</html>

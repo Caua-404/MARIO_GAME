@@ -1,0 +1,480 @@
+.game {
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid rgb(35, 160, 35);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.vida {
+  width: 100px;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.nuvem {
+  position: absolute;
+  width: 320px;
+  animation: nuvem-animation 5s infinite linear;
+}
+.nuvem2 {
+  position: absolute;
+  width: 320px;
+  margin-top: 90px;
+  margin-right: 90px;
+  animation: nuvem2-animation 6s infinite linear;
+}
+.nuvem3 {
+  position: absolute;
+  width: 320px;
+  margin-top: 90px;
+  margin-right: -600px;
+  animation: nuvem3-animation 6s infinite linear;
+}
+.nuvem4 {
+  position: absolute;
+  width: 320px;
+  margin-top: 90px;
+  margin-right: 10px;
+  animation: nuvem4-animation 8s infinite linear;
+}
+.nuvem5 {
+  position: absolute;
+  width: 320px;
+  margin-top: 100px;
+  margin-right: -400px;
+  animation: nuvem5-animation 6s infinite linear;
+}
+
+.sono1 {
+  position: absolute;
+  width: 60px;
+  margin-top: 464px;
+  animation: sono1 25s linear infinite;
+}
+
+.Z {
+  position: absolute;
+  width: 40px;
+  animation: luta-animation 8s infinite linear;
+}
+
+.mato {
+  position: absolute;
+  width: 430px;
+  margin-top: 300px;
+  animation: mato-animation 5s infinite linear;
+}
+.mato2 {
+  position: absolute;
+  width: 260px;
+  margin-top: 380px;
+  animation: mato2-animation 4s infinite linear;
+}
+.mato3 {
+  position: absolute;
+  width: 260px;
+  margin-top: 380px;
+  margin-left: 150px;
+  animation: mato3-animation 3s infinite linear;
+}
+.mato4 {
+  position: absolute;
+  width: 260px;
+  margin-top: 380px;
+  margin-left: 300px;
+  animation: mato4-animation 4s infinite linear;
+}
+
+.mario {
+  position: absolute;
+  margin-top: 363px;
+  width: 140px;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 100px;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+
+  60% {
+    bottom: 100px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.base {
+  position: absolute;
+  margin-top: 510px;
+  width: 100%;
+}
+
+.cano {
+  width: 90px;
+  position: absolute;
+  margin-top: 405px;
+  animation: cano-animation 4s infinite linear;
+}
+
+.voando {
+  width: 120px;
+  position: absolute;
+  margin-top: 100px;
+  animation: voando-animation 5s infinite linear;
+}
+
+.tutle {
+  position: absolute;
+  width: 60px;
+  margin-top: 344px;
+  margin-right: 20px;
+  animation: tutle-animation 4s infinite linear;
+}
+
+.bloco {
+  position: absolute;
+  width: 90px;
+  margin-top: 250px;
+  margin-left: 900px;
+  animation: bloco-animation 6s infinite linear;
+}
+.bloco1 {
+  position: absolute;
+  margin-top: 350px;
+  width: 30px;
+  animation: bloco1-animation 8s infinite linear;
+}
+.bloco2 {
+  position: absolute;
+  width: 70px;
+  margin-top: 150px;
+  margin-left: 951px;
+  animation: bloco2-animation 8s infinite linear;
+}
+
+.moeda {
+  width: 130px;
+  position: absolute;
+  margin-top: 300px;
+  animation: moeda-animation 8s infinite linear;
+}
+
+.yoshi3 {
+  position: absolute;
+  width: 100px;
+  margin-top: 435px;
+  animation: yoshi3-animation 8s infinite linear;
+}
+
+.yoshi {
+  position: absolute;
+  width: 90px;
+  margin-top: 408px;
+  animation: yoshi-animation 9s infinite linear;
+}
+
+.montanha1 {
+  position: absolute;
+  width: 1000px;
+  margin-top: 47px;
+  margin-left: -150px;
+  animation: montanha1-animation 30s infinite linear;
+}
+
+.montanha {
+  position: absolute;
+  margin-top: 182px;
+  margin-left: 190px;
+  animation: montanha-animation 30s infinite linear;
+}
+
+.arvore {
+  position: absolute;
+  width: 390px;
+  margin-top: 150px;
+}
+
+.ioshy1 {
+  position: absolute;
+  width: 80px;
+  margin-top: 445px;
+  animation: ioshy1-animation 4s infinite linear;
+}
+
+.ioshy2 {
+  position: absolute;
+  width: 80px;
+  margin-top: 420px;
+  animation: ioshy2-animation 10s infinite linear;
+}
+
+.castelo {
+  position: absolute;
+  margin-top: -420px;
+  width: 1100px;
+  animation: castelo-animation 35s infinite linear;
+}
+
+@keyframes cano-animation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes tutle-animation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes luta-animation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes nuvem-animation {
+  from {
+    right: -280px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+@keyframes nuvem2-animation {
+  from {
+    right: -380px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+@keyframes nuvem3-animation {
+  from {
+    right: -250px;
+  }
+
+  to {
+    right: 150%;
+  }
+}
+@keyframes nuvem4-animation {
+  from {
+    right: -380px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+@keyframes nuvem5-animation {
+  from {
+    right: -10px;
+  }
+
+  to {
+    right: 150%;
+  }
+}
+
+@keyframes voando-animation {
+  from {
+    right: -280px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes moeda-animation {
+  from {
+    right: -280px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes bloco-animation {
+  from {
+    right: -250px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes bloco1-animation {
+  from {
+    right: -200px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes bloco2-animation {
+  from {
+    right: -290px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes mato-animation {
+  from {
+    right: -450px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes mato2-animation {
+  from {
+    right: -480px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes mato3-animation {
+  from {
+    right: -480px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes mato4-animation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes yoshi-animation {
+  from {
+    left: -180px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes yoshi3-animation {
+  from {
+    left: -180px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes montanha-animation {
+  from {
+    right: -780px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes montanha1-animation {
+  from {
+    right: -980px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes ioshy1-animation {
+  from {
+    left: -180px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes ioshy2-animation {
+  from {
+    left: -180px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes castelo-animation {
+  from {
+    right: -980px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes sono1 {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
